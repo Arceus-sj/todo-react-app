@@ -15,6 +15,10 @@ function App() {
     setTodoList([...todoList, newText]);
    }
 
+   const deleteTask = (taskName) => {
+    
+   }
+
   return (
     <div className="App">
       <div className='addTask'>
@@ -25,7 +29,11 @@ function App() {
       <div className='list'>
         {todoList.map((task, key) => {
           return (
-            <h1>{task}</h1>
+            
+            <div>
+              {task}
+              <button onClick={() => deleteTask(task)}>Delete</button>  
+            </div>
           );
         })}
       </div>
