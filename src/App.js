@@ -9,7 +9,6 @@ function App() {
    const textChange = (event) => {
     setNewText(event.target.value);
    }
-
    const addTask = () => {
     // const newTodoList = [...todoList, newText];
     setTodoList([...todoList, newText]);
@@ -42,3 +41,7 @@ function App() {
 }
 
 export default App;
+
+
+
+
